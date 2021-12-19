@@ -10,7 +10,18 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         background-color: #fff;
-        overflow-y: hidden;
-        overflow-x: hidden;
+    }
+`
+
+export const Navbar = styled.div`
+    display: flex;
+`
+
+export const Logo = styled.div`
+    margin-left: auto;
+    margin-right: auto;
+    img {
+        width: 100%;
+        height: auto;
     }
 `
