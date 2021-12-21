@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Hero from '../components/Hero'
 import Proyecto from '../components/Proyecto'
 import Texto from '../components/Texto'
-import { Container, GlobalStyle, Navbar, Logo, Proyectos, Nosotros, Main, ContainerProyectos, ContainerNosotros, ContainerContacto } from '../styles/Home.styled'
+import { Container, GlobalStyle, Navbar, Logo, Proyectos, Nosotros, Main, ContainerProyectos, ContainerNosotros, ContainerContacto, Mitad, Contacto, Titulo, Contenido } from '../styles/Home.styled'
 import logo from '../assets/logo.png'
 import izq from '../assets/proyectos.svg'
 import der from '../assets/nosotros.svg'
@@ -42,7 +42,27 @@ function Home() {
                     <Texto />
                 </ContainerNosotros>
                 <ContainerContacto>
-                    
+                    <Mitad>
+
+                    </Mitad>
+                    <Mitad>
+                        <Contacto>
+                            <Titulo>
+                                Contacto
+                            </Titulo>
+                            <Contenido>
+
+                            </Contenido>
+                        </Contacto>
+                        <Contacto>
+                            <Titulo>
+                                Contacto
+                            </Titulo>
+                            <Contenido>
+                                
+                            </Contenido>
+                        </Contacto>
+                    </Mitad>
                 </ContainerContacto>
             </Main>
             
