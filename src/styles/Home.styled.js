@@ -88,6 +88,11 @@ export const ContainerNosotros = styled.div`
 `
 
 export const ContainerContacto = styled.div`
+    width: 80vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
 `
 
 export const Main = styled.div`
@@ -98,4 +103,17 @@ export const Main = styled.div`
     margin-right: auto;
     border-left: 1px solid #322758;
     border-right: 1px solid #322758;
+`
+
+export const Mitad = styled.div`
+    width: 50%;
+`
+
+export const Contacto = styled.div`
+`
+
+export const Titulo = styled.div`
+`
+
+export const Contenido = styled.div`
 `
