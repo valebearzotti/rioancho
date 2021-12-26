@@ -19,21 +19,26 @@ export const Navbar = styled.div`
     display: flex;
     font-size: 22px;
     color: #322758;
-    position: fixed;
+    position: ${props => props.val ? "fixed" : "absolute"};
     width: 100%;
-    top: 0;
+    top: ${props => props.val ? "0" : ""};
     padding-top: 20px;
     background-color: #fff;
     z-index: 100;
+    opacity: ${props => props.val ? "1" : "0"};
+    transition: opacity .6s ease-in;
 `
+
 
 export const Logo = styled.div`
     margin-left: auto;
     margin-right: auto;
+    opacity: ${props => props.val ? "1" : "0"};
     img {
         width: 100%;
         height: auto;
     }
+    transition: opacity .6s ease-in;
 `
 
 export const Proyectos = styled.div`
@@ -93,6 +98,7 @@ export const ContainerContacto = styled.div`
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    margin-bottom: 50px;
 `
 
 export const Main = styled.div`
@@ -107,13 +113,31 @@ export const Main = styled.div`
 
 export const Mitad = styled.div`
     width: 50%;
+    display: flex;
+    img {
+        width: 80%;
+        height: auto;
+    }
 `
 
 export const Contacto = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: 50px;
+    &:nth-child(2){
+        margin-left: auto;
+        margin-right: auto;
+    }
+    color: #322758;
 `
 
 export const Titulo = styled.div`
+    font-size: 12px;
+    text-transform: uppercase;
 `
 
 export const Contenido = styled.div`
+    font-size: 18px;
+    width: 220px;
 `
