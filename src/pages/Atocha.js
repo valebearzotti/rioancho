@@ -1,9 +1,14 @@
 import React from 'react'
-import { Container, GlobalStyle, Navbar, Logo, Proyectos, Nosotros, Main, ContainerProyectos, ContainerNosotros, ContainerContacto, Mitad, Contacto, Titulo, Contenido } from '../styles/Home.styled'
-import { Carousel } from '../styles/Proyecto.styled'
+import { Container, GlobalStyle, Navbar, Logo, Proyectos, Nosotros, ContainerProyectos, ContainerNosotros, ContainerContacto, Mitad, Contacto, Titulo, Contenido } from '../styles/Home.styled'
+import { ContenedorCarousel, Main } from '../styles/Proyecto.styled'
 import logo from '../assets/logo.png'
 import izq from '../assets/proyectos.svg'
 import der from '../assets/nosotros.svg'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import atocha from '../assets/atocha.jpg'
+import deptoA from '../assets/deptoA.jpg'
+import deptoA2 from '../assets/deptoA2.jpg'
 
 function Atocha() {
     return (
@@ -27,9 +32,17 @@ function Atocha() {
                 </a>
             </Navbar>
             <Main>
-                <Carousel>
-
-                </Carousel>
+                <ContenedorCarousel>
+                    <Carousel className="tall">
+                        <div>
+                            <img src={deptoA} />
+                        </div>
+                        <div>
+                            <img src={deptoA2} />
+                        </div>
+                    </Carousel>
+                </ContenedorCarousel>
+                
             </Main>
         </Container>
     )
