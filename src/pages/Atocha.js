@@ -4,13 +4,13 @@ import { ContenedorCarousel, Main } from '../styles/Proyecto.styled'
 import logo from '../assets/logo.png'
 import izq from '../assets/proyectos.svg'
 import der from '../assets/nosotros.svg'
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
 import atocha from '../assets/atocha.jpg'
 import deptoA from '../assets/deptoA.jpg'
 import deptoA2 from '../assets/deptoA2.jpg'
+import Carousel from '../components/Carousel'
 
 function Atocha() {
+    const slides = [atocha, deptoA, deptoA2]
     return (
         <Container>
             <GlobalStyle />
@@ -33,14 +33,7 @@ function Atocha() {
             </Navbar>
             <Main>
                 <ContenedorCarousel>
-                    <Carousel className="tall">
-                        <div>
-                            <img src={deptoA} />
-                        </div>
-                        <div>
-                            <img src={deptoA2} />
-                        </div>
-                    </Carousel>
+                    <Carousel slides={slides}/>
                 </ContenedorCarousel>
                 
             </Main>
