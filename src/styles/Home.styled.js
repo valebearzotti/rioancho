@@ -26,7 +26,7 @@ export const Navbar = styled.div`
     background-color: #fff;
     z-index: 100;
     opacity: ${props => props.val ? "1" : "0"};
-    transition: opacity .6s ease-in;
+    transition: opacity .3s ease-in;
 `
 
 
@@ -38,7 +38,7 @@ export const Logo = styled.div`
         width: 100%;
         height: auto;
     }
-    transition: opacity .6s ease-in;
+    transition: opacity .3s ease-in;
 `
 
 export const Proyectos = styled.div`
