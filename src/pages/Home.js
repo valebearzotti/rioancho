@@ -28,20 +28,24 @@ function Home() {
             <GlobalStyle />
             <Hero />
             <Navbar val={fixed}>
-                <Proyectos>
-                    <img src={izq}/>
-                    <p>Proyectos</p>
-                </Proyectos>
+                <a href="#proyectos">
+                    <Proyectos>
+                        <img src={izq}/>
+                        <p>Proyectos</p>
+                    </Proyectos>
+                </a>
                 <Logo val={fixed}>
                     <img src={logo} />
                 </Logo>
-                <Nosotros>
-                    <p>Nosotros</p>
-                    <img src={der}/>
-                </Nosotros>
+                <a href="#nosotros">
+                    <Nosotros>
+                        <p>Nosotros</p>
+                        <img src={der}/>
+                    </Nosotros>
+                </a>
             </Navbar>
             <Main>
-                <ContainerProyectos>
+                <ContainerProyectos id="proyectos">
                     <Proyecto 
                         nombre={"Atocha"}
                         fondo={atocha}
@@ -51,7 +55,7 @@ function Home() {
                         fondo={atocha}
                     />
                 </ContainerProyectos>
-                <ContainerNosotros>
+                <ContainerNosotros id="nosotros">
                     <Texto />
                 </ContainerNosotros>
                 <ContainerContacto>

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 function Texto() {
     return (
-        <div>
+        <Container>
             <Parrafo border={true}>
                 Nuestro propósito principal es promover y respaldar inversiones confiables en el
                 sector inmobiliario y la construcción.
@@ -17,9 +17,14 @@ function Texto() {
                 la calidad, la funcionalidad, confort y valor de inversión para los futuros dueños de
                 las experiencias que proponemos.
             </Parrafo>
-        </div>
+        </Container>
     )
 }
+
+const Container = styled.div`
+    margin-top: auto;
+    margin-bottom: auto;
+`
 
 const Parrafo = styled.p`
     font-size: 22px;

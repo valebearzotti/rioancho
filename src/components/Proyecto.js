@@ -18,6 +18,8 @@ const Container = styled.div`
     display: flex;
     cursor: pointer;
     position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
     img{
         width: 100%;
         height: 100%;

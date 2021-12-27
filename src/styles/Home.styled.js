@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle, keyframes } from "styled-components"
 import './styles.css'
 
 export const Container = styled.div`
@@ -12,6 +12,9 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         background-color: #fff;
         font-family: 'Nunito', sans-serif;
+    }
+    html {
+        scroll-behavior: smooth;
     }
 `
 
@@ -26,9 +29,21 @@ export const Navbar = styled.div`
     background-color: #fff;
     z-index: 100;
     opacity: ${props => props.val ? "1" : "0"};
-    transition: opacity .6s ease-in;
+    transition: opacity .3s ease-in;
+    a {
+        text-decoration: none;
+        color: #322758;
+    }
 `
 
+const textappear = keyframes`
+  from {
+    transform: translateY(50%);
+  }
+  to {
+    transform: none;
+  }
+`
 
 export const Logo = styled.div`
     margin-left: auto;
@@ -38,7 +53,7 @@ export const Logo = styled.div`
         width: 100%;
         height: auto;
     }
-    transition: opacity .6s ease-in;
+    transition: opacity .3s ease-in;
 `
 
 export const Proyectos = styled.div`
@@ -75,13 +90,11 @@ export const Nosotros = styled.div`
 
 export const ContainerProyectos = styled.div`
     display: flex;
-    margin-top: 100px;
-    padding-top: 40px;
-    padding-bottom: 40px;
     justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
     width: 90vw;
+    height: 100vh;
 `
 
 export const ContainerNosotros = styled.div`
@@ -89,7 +102,7 @@ export const ContainerNosotros = styled.div`
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    height: 100vh;
 `
 
 export const ContainerContacto = styled.div`
