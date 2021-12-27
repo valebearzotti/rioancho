@@ -16,7 +16,7 @@ function Hero() {
             <video autoPlay muted loop id='vid'>
                 <source src={herovid} type="video/mp4" />
             </video>
-            <img src={arrow} />
+            <a href="#proyectos"><img src={arrow} /></a>
         </Container>
     )
 }
@@ -34,6 +34,7 @@ const Container = styled.div`
         width: 50px;
         height: auto;
         top: 90%;
+        cursor: pointer;
     }
     @media (max-width: 1300px){
         img{

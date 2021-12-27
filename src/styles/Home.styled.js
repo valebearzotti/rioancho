@@ -13,6 +13,9 @@ export const GlobalStyle = createGlobalStyle`
         background-color: #fff;
         font-family: 'Nunito', sans-serif;
     }
+    html {
+        scroll-behavior: smooth;
+    }
 `
 
 export const Navbar = styled.div`
@@ -27,6 +30,10 @@ export const Navbar = styled.div`
     z-index: 100;
     opacity: ${props => props.val ? "1" : "0"};
     transition: opacity .3s ease-in;
+    a {
+        text-decoration: none;
+        color: #322758;
+    }
 `
 
 
@@ -75,13 +82,11 @@ export const Nosotros = styled.div`
 
 export const ContainerProyectos = styled.div`
     display: flex;
-    margin-top: 100px;
-    padding-top: 40px;
-    padding-bottom: 40px;
     justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
     width: 90vw;
+    height: 100vh;
 `
 
 export const ContainerNosotros = styled.div`
@@ -89,7 +94,7 @@ export const ContainerNosotros = styled.div`
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    height: 100vh;
 `
 
 export const ContainerContacto = styled.div`
