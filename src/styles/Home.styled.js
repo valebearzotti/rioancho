@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle, keyframes } from "styled-components"
 import './styles.css'
 
 export const Container = styled.div`
@@ -36,6 +36,14 @@ export const Navbar = styled.div`
     }
 `
 
+const textappear = keyframes`
+  from {
+    transform: translateY(50%);
+  }
+  to {
+    transform: none;
+  }
+`
 
 export const Logo = styled.div`
     margin-left: auto;
