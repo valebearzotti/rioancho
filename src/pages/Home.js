@@ -51,7 +51,7 @@ function Home() {
                         fondo={atocha}
                     />
                     <Proyecto 
-                        nombre={"Parque"}
+                        nombre={"Abasto"}
                         fondo={atocha}
                     />
                 </ContainerProyectos>
