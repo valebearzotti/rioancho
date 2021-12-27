@@ -49,10 +49,12 @@ function Home() {
                     <Proyecto 
                         nombre={"Atocha"}
                         fondo={atocha}
+                        link={"/atocha"}
                     />
                     <Proyecto 
                         nombre={"Abasto"}
                         fondo={atocha}
+                        link={"./#proyectos"}
                     />
                 </ContainerProyectos>
                 <ContainerNosotros id="nosotros">
