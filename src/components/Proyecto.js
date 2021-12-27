@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Proyecto({nombre, fondo}) {
+function Proyecto({nombre, fondo, link}) {
     return (
         <Container>
-            <img src={fondo}/>
-            <p>{nombre}</p>
+            <a href={link}>
+                <img src={fondo}/>
+                <p>{nombre}</p>
+            </a>
         </Container>
     )
 }

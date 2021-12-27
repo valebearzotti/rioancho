@@ -36,15 +36,6 @@ export const Navbar = styled.div`
     }
 `
 
-const textappear = keyframes`
-  from {
-    transform: translateY(50%);
-  }
-  to {
-    transform: none;
-  }
-`
-
 export const Logo = styled.div`
     margin-left: auto;
     margin-right: auto;
