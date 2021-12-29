@@ -45,6 +45,7 @@ export const Titulo = styled.div`
             margin-left: 0px;
             font-size: 16px;
         }
+        margin-top: 0;
     }
 `
 
