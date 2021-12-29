@@ -52,6 +52,11 @@ const Container = styled.div`
             transition: opacity .3s ease-in-out;
         }
     }
+    @media (max-width: 830px){
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
 `
 
 export default Proyecto

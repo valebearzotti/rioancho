@@ -32,6 +32,12 @@ const Parrafo = styled.p`
     font-weight: 500;
     border-bottom: ${props => props.border ? '1px' : '0px'} solid #322758;
     padding-bottom: 20px;
+    @media (max-width: 830px){
+        font-size: 20px;
+    }
+    @media (max-width: 350px){
+        font-size: 18px;
+    }
 `
 
 export default Texto
