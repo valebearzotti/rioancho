@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { createGlobalStyle, keyframes } from "styled-components"
 import './styles.css'
 
 export const Main = styled.div`
@@ -39,6 +38,13 @@ export const Titulo = styled.div`
         font-weight: 600;
         margin-top: auto;
         margin-bottom: auto;
+    }
+    @media (max-width: 550px){
+        flex-direction: column;
+        p{
+            margin-left: 0px;
+            font-size: 16px;
+        }
     }
 `
 

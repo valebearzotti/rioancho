@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import styled from 'styled-components'
 import heroimg from '../assets/work-inpro.jpg'
 import herovid from '../assets/herovid.mp4'
@@ -6,14 +6,21 @@ import arrow from '../assets/arrow.svg'
 
 function Hero() {
 
+    const [show, setShow] = useState(false)
+
     useEffect(() => {
-        document.getElementById('vid').play();
+        if (window.innerWidth < 768) {
+            setShow(true)
+        } else {
+            document.getElementById('vid').play();
+            setShow(false)
+        }
     }, [])
 
     return (
         <Container>
             {/* <img src={heroimg} /> */}
-            <video autoPlay muted loop id='vid'>
+            <video controls={show} muted loop id='vid'>
                 <source src={herovid} type="video/mp4" />
             </video>
             <a href="#proyectos"><img src={arrow} /></a>

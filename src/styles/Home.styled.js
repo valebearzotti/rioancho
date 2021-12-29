@@ -34,6 +34,9 @@ export const Navbar = styled.div`
         text-decoration: none;
         color: #322758;
     }
+    @media (max-width: 830px){
+        position: fixed;
+    }
 `
 
 export const Logo = styled.div`
@@ -43,6 +46,12 @@ export const Logo = styled.div`
     img {
         width: 100%;
         height: auto;
+    }
+    @media (max-width: 830px){
+        img {
+            width: 80px;
+            height: auto;
+        }
     }
     transition: opacity .3s ease-in;
 `
@@ -61,6 +70,16 @@ export const Proyectos = styled.div`
         width: 30px;
         height: auto;
     }
+    @media (max-width: 830px){
+        padding: .5em;
+        p{
+            font-size: 14px;
+        }
+        img {
+            margin-right: .5em;
+            width: 18px;
+        }
+    }
 `
 
 export const Nosotros = styled.div`
@@ -77,6 +96,16 @@ export const Nosotros = styled.div`
         width: 30px;
         height: auto;
     }
+    @media (max-width: 830px){
+        padding: .5em;
+        p{
+            font-size: 14px;
+        }
+        img {
+            margin-left: .5em;
+            width: 18px;
+        }
+    }
 `
 
 export const ContainerProyectos = styled.div`
@@ -86,6 +115,10 @@ export const ContainerProyectos = styled.div`
     margin-right: auto;
     width: 90vw;
     height: 100vh;
+    @media (max-width: 830px){    
+        padding-top: 200px;
+        flex-direction: column;
+    }
 `
 
 export const ContainerNosotros = styled.div`
@@ -94,6 +127,15 @@ export const ContainerNosotros = styled.div`
     margin-left: auto;
     margin-right: auto;
     height: 100vh;
+    @media (max-width: 830px){    
+        margin-top: 150px;
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+    @media (max-width: 410px){
+        margin-bottom: 100px;
+        padding-bottom: 50px;
+    }
 `
 
 export const ContainerContacto = styled.div`
@@ -103,6 +145,9 @@ export const ContainerContacto = styled.div`
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    @media (max-width: 830px){
+        flex-direction: column;
+    }
 `
 
 export const Main = styled.div`
@@ -122,6 +167,14 @@ export const Mitad = styled.div`
         width: 80%;
         height: auto;
     }
+    @media (max-width: 830px){
+        flex-direction: column;
+        width: 100%;
+        img{
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }
 `
 
 export const Contacto = styled.div`
@@ -134,14 +187,43 @@ export const Contacto = styled.div`
         margin-right: auto;
     }
     color: #322758;
+    @media (max-width: 830px){
+        margin-left: auto;
+        margin-right: auto;
+    }
 `
 
 export const Titulo = styled.div`
     font-size: 12px;
     text-transform: uppercase;
+    @media (max-width: 830px){
+        font-size: 16px;
+    }
 `
 
 export const Contenido = styled.div`
     font-size: 18px;
     width: 220px;
+    @media (max-width: 830px){
+        font-size: 20px;
+        width: fit-content;
+    }
+    @media (max-width: 1024px){
+        width: 200px;
+        font-size: 16px;
+    }
+`
+
+export const Redes = styled.a`
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    img{
+        margin-right: 6px;
+    }
+    p{
+        margin-left: 6px;
+    }
+    text-decoration: none;
+    color: #322758;
 `
