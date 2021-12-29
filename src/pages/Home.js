@@ -6,7 +6,7 @@ import { Container, GlobalStyle, Navbar, Logo, Proyectos, Nosotros, Main, Contai
 import logo from '../assets/logo.png'
 import izq from '../assets/proyectos.svg'
 import der from '../assets/nosotros.svg'
-import atocha from '../assets/atocha.jpg'
+import atocha from '../assets/atocha1.jpeg'
 import abasto from '../assets/abasto.jpg'
 import puerta from '../assets/puerta.png'
 import ig from '../assets/ig.svg'
