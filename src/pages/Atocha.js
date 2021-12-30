@@ -4,10 +4,10 @@ import { ContenedorCarousel, ContenedorDatos, Titulo, Estado, Datos, Ubicacion, 
 import logo from '../assets/logo.png'
 import izq from '../assets/proyectos.svg'
 import der from '../assets/nosotros.svg'
-import slideUno from '../assets/atocha1.jpeg'
-import slideDos from '../assets/atocha2.jpeg'
-import slideTres from '../assets/atocha3.jpeg'
-import slideCuatro from '../assets/atocha4.jpeg'
+import slideUno from '../assets/atocha1.jpg'
+import slideDos from '../assets/atocha2.jpg'
+import slideTres from '../assets/atocha3.jpg'
+import slideCuatro from '../assets/atocha4.jpg'
 import Carousel from '../components/Carousel'
 
 function Atocha() {

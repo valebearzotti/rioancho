@@ -6,8 +6,8 @@ import { Container, GlobalStyle, Navbar, Logo, Proyectos, Nosotros, Main, Contai
 import logo from '../assets/logo.png'
 import izq from '../assets/proyectos.svg'
 import der from '../assets/nosotros.svg'
-import atocha from '../assets/atocha1.jpeg'
-import abasto from '../assets/abasto.jpg'
+import atocha from '../assets/atocha1.jpg'
+import abasto from '../assets/abasto1.jpg'
 import puerta from '../assets/puerta.png'
 import ig from '../assets/ig.svg'
 
@@ -56,7 +56,7 @@ function Home() {
                     <Proyecto 
                         nombre={"Abasto"}
                         fondo={abasto}
-                        link={"./#proyectos"}
+                        link={"/abasto"}
                     />
                 </ContainerProyectos>
                 <ContainerNosotros id="nosotros">
@@ -80,14 +80,15 @@ function Home() {
                                 Contacto
                             </Titulo>
                             <Contenido>
-                            +54 341 6635989 contacto@rioancho.com.ar
+                            +54 341 6635989 
+                            <Redes href="mailto:contacto@rioancho.com.ar">contacto@rioancho.com.ar</Redes>
+                            <Redes href="https://www.instagram.com/rio.ancho/" target="_blank">
+                                <img src={ig}/><p>/rio.ancho</p>
+                            </Redes>
                             </Contenido>
                         </Contacto>
                     </Mitad>
                 </ContainerContacto>
-                <Redes href="https://www.instagram.com/rio.ancho/" target="_blank">
-                    <img src={ig}/><p>/rio.ancho</p>
-                </Redes>
             </Main>
             
         </Container>
