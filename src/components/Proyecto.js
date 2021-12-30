@@ -57,6 +57,10 @@ const Container = styled.div`
         margin-right: auto;
         margin-top: 50px;
     }
+    @media (min-width: 1440px){
+        width: 350px;
+        height: 600px;
+    }
 `
 
 export default Proyecto

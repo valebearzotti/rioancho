@@ -23,6 +23,17 @@ export const ContenedorDatos = styled.div`
     color: #322758;
 `
 
+export const ContenedorSinDatos = styled.div`
+    width: 80vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    flex-direction: column;
+    color: #322758;
+`
+
+
 export const Titulo = styled.div`
     margin-top: 50px;
     display: flex;

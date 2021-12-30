@@ -7,22 +7,43 @@ function Carousel({slides}) {
 
     return (
         <Container>
-             <Flickity>
-                <img src={slides[0]} />
+             <Flickity options={{
+              autoPlay: 4000,
+              pauseAutoPlayOnHover: true,
+              wrapAround: true,
+              adaptiveHeight: false,
+              freeScroll: true,
+              contain: true,
+              dragThreshold: 10,
+              // disable previous & next buttons and dots
+              prevNextButtons: false,
+              pageDots: false,
+              imagesLoaded: true,
+              initialIndex: 2
+            }}>
+                {slides.map((image, index) => (
+                    <SlideImage className="carousel-cell" src={image} alt="" />
+                ))}
+                {slides.map((image, index) => (
+                    <SlideImage className="carousel-cell" src={image} alt="" />
+                ))}
              </Flickity>
         </Container>
     )
 }
 
 const Container = styled.div`
+    display: block;
+    width: 100%;
+    height: 400px;
+    overflow-x: hidden;
+    outline: none;
 `
 
 const SlideImage = styled.img`
-    width: auto;
-    height: 100%;
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
+    height: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
 `
 
 export default Carousel

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import styled from 'styled-components'
 import heroimg from '../assets/work-inpro.jpg'
-import herovid from '../assets/herovid.mp4'
+import herovid from '../assets/atocha-video.mp4'
 import arrow from '../assets/arrow.svg'
 
 function Hero() {

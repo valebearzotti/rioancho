@@ -38,6 +38,9 @@ const Parrafo = styled.p`
     @media (max-width: 350px){
         font-size: 18px;
     }
+    @media (min-width: 1440px){
+        font-size: 26px;
+    }
 `
 
 export default Texto

@@ -182,6 +182,9 @@ export const Contacto = styled.div`
     flex-direction: column;
     margin-top: auto;
     margin-bottom: 50px;
+    &:nth-child(1){
+        margin-bottom: 70px;
+    }
     &:nth-child(2){
         margin-left: auto;
         margin-right: auto;
@@ -191,6 +194,11 @@ export const Contacto = styled.div`
         margin-left: auto;
         margin-right: auto;
     }
+    @media (min-width: 1440px){
+        &:nth-child(1){
+            margin-bottom: 78px;
+        }
+    }
 `
 
 export const Titulo = styled.div`
@@ -198,6 +206,9 @@ export const Titulo = styled.div`
     text-transform: uppercase;
     @media (max-width: 830px){
         font-size: 16px;
+    }
+    @media (min-width: 1440px){
+        font-size: 18px;
     }
 `
 
@@ -212,17 +223,21 @@ export const Contenido = styled.div`
         width: 200px;
         font-size: 16px;
     }
+    @media (min-width: 1440px){
+        font-size: 24px;
+        width: 300px;
+    }
 `
 
 export const Redes = styled.a`
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     img{
         margin-right: 6px;
+        width: 20px;
+        height: auto;
     }
     p{
-        margin-left: 6px;
+        margin: 0;
     }
     text-decoration: none;
     color: #322758;
