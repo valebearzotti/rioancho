@@ -4,9 +4,10 @@ import { ContenedorCarousel, ContenedorSinDatos, Titulo, Estado, Datos, Ubicacio
 import logo from '../assets/logo.png'
 import izq from '../assets/proyectos.svg'
 import der from '../assets/nosotros.svg'
-import slideUno from '../assets/abasto1.jpg'
-import slideDos from '../assets/abasto2.jpg'
+import slideUno from '../assets/abasto1.webp'
+import slideDos from '../assets/abasto2.webp'
 import Carousel from '../components/Carousel'
+import Swipe from '../components/Swipe'
 
 function Abasto() {
     const slides = [slideUno, slideDos]
@@ -21,7 +22,7 @@ function Abasto() {
                     </Proyectos>
                 </a>
                 <Logo val={true}>
-                    <img src={logo} />
+                    <a href="./#"><img src={logo} /></a>
                 </Logo>
                 <a href="./#nosotros">
                     <Nosotros>
@@ -32,11 +33,14 @@ function Abasto() {
             </Navbar>
             <Main>
                 <ContenedorCarousel>
-                    <Carousel slides={slides}/>
+                    <Swipe slides={slides}/>
                 </ContenedorCarousel>
                 <ContenedorSinDatos>
                     <Titulo>
-                        <h1>Abasto</h1>
+                        <h1>Atocha Abasto</h1>
+                        <p>
+                            Pasco 1578, Abasto, Rosario
+                        </p>
                     </Titulo>
                     <Estado>
                         En proceso

@@ -4,11 +4,12 @@ import { ContenedorCarousel, ContenedorDatos, Titulo, Estado, Datos, Ubicacion, 
 import logo from '../assets/logo.png'
 import izq from '../assets/proyectos.svg'
 import der from '../assets/nosotros.svg'
-import slideUno from '../assets/atocha1.jpg'
-import slideDos from '../assets/atocha2.jpg'
+import slideUno from '../assets/atocha1.webp'
+import slideDos from '../assets/atocha2.webp'
 import slideTres from '../assets/atocha3.jpg'
 import slideCuatro from '../assets/atocha4.jpg'
 import Carousel from '../components/Carousel'
+import Swipe from '../components/Swipe'
 
 function Atocha() {
     const slides = [slideUno, slideDos, slideTres, slideCuatro]
@@ -23,7 +24,7 @@ function Atocha() {
                     </Proyectos>
                 </a>
                 <Logo val={true}>
-                    <img src={logo} />
+                    <a href="./#"><img src={logo} /></a>
                 </Logo>
                 <a href="./#nosotros">
                     <Nosotros>
@@ -34,13 +35,13 @@ function Atocha() {
             </Navbar>
             <Main>
                 <ContenedorCarousel>
-                    <Carousel slides={slides}/>
+                    <Swipe slides={slides}/>
                 </ContenedorCarousel>
                 <ContenedorDatos>
                     <Titulo>
                         <h1>Atocha</h1>
                         <p>
-                            Tucuman 3319, Centro, Rosario
+                            Tucumán 3319, Centro, Rosario
                         </p>
                     </Titulo>
                     <Estado>
@@ -55,7 +56,7 @@ function Atocha() {
                         de numerosos locales en Pichincha.</p>
                     </Datos>
                     <Estado>
-                        Ubicacion
+                        Ubicación
                     </Estado>
                     <Ubicacion>
                     <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Tucuman%203319,%20Rosario,%20Argentina+(Atocha)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
