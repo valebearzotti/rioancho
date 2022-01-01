@@ -6,8 +6,8 @@ import { Container, GlobalStyle, Navbar, Logo, Proyectos, Nosotros, Main, Contai
 import logo from '../assets/logo.png'
 import izq from '../assets/proyectos.svg'
 import der from '../assets/nosotros.svg'
-import atocha from '../assets/atocha1.jpg'
-import abasto from '../assets/abasto1.jpg'
+import atocha from '../assets/atocha1.webp'
+import abasto from '../assets/abasto1.webp'
 import puerta from '../assets/puerta.png'
 import ig from '../assets/ig.svg'
 
@@ -17,11 +17,16 @@ function Home() {
 
     useEffect(() => {
         window.onscroll = () => {
-            if (window.innerHeight < window.scrollY) {
+            if (window.innerWidth < 769){
                 setFixed(true)
             } else {
-                setFixed(false)
+                if (window.innerHeight < window.scrollY) {
+                    setFixed(true)
+                } else {
+                    setFixed(false)
+                }
             }
+            
         }
     })
 
@@ -37,7 +42,7 @@ function Home() {
                     </Proyectos>
                 </a>
                 <Logo val={fixed}>
-                    <img src={logo} />
+                    <a href="/#"><img src={logo} /></a>
                 </Logo>
                 <a href="#nosotros">
                     <Nosotros>
@@ -54,7 +59,7 @@ function Home() {
                         link={"/atocha"}
                     />
                     <Proyecto 
-                        nombre={"Abasto"}
+                        nombre={"Atocha Abasto"}
                         fondo={abasto}
                         link={"/abasto"}
                     />

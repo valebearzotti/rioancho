@@ -6,21 +6,14 @@ import arrow from '../assets/arrow.svg'
 
 function Hero() {
 
-    const [show, setShow] = useState(false)
-
     useEffect(() => {
-        if (window.innerWidth < 768) {
-            setShow(true)
-        } else {
-            document.getElementById('vid').play();
-            setShow(false)
-        }
+        document.getElementById('vid').play();
     }, [])
 
     return (
         <Container>
             {/* <img src={heroimg} /> */}
-            <video controls={show} muted loop id='vid'>
+            <video autoPlay muted loop id='vid'>
                 <source src={herovid} type="video/mp4" />
             </video>
             <a href="#proyectos"><img src={arrow} /></a>
@@ -46,6 +39,16 @@ const Container = styled.div`
     @media (max-width: 1300px){
         img{
             object-position: 15% 100%;
+        }
+    }
+    @media (max-width: 768px){
+        video{
+            height: auto;
+        }
+        img{
+            top: 80%;
+            left: 47%;
+            width: 30px;
         }
     }
 `

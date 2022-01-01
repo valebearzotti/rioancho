@@ -16,10 +16,11 @@ function Carousel({slides}) {
               contain: true,
               dragThreshold: 10,
               // disable previous & next buttons and dots
-              prevNextButtons: false,
+              prevNextButtons: true,
               pageDots: false,
               imagesLoaded: true,
-              initialIndex: 2
+              initialIndex: 1,
+              lazyLoad: 1
             }}>
                 {slides.map((image, index) => (
                     <SlideImage className="carousel-cell" src={image} alt="" />
@@ -35,13 +36,27 @@ function Carousel({slides}) {
 const Container = styled.div`
     display: block;
     width: 100%;
-    height: 400px;
+    height: 500px;
     overflow-x: hidden;
     outline: none;
+    /* no circle */
+    /* .flickity-button {
+        background: transparent;
+    }
+    .flickity-prev-next-button {
+        width: 100px;
+        height: 100px;
+    }
+    .flickity-button-icon {
+        fill: white;
+    }
+    .flickity-button:disabled {
+        display: none;
+    } */
 `
 
 const SlideImage = styled.img`
-    height: 400px;
+    height: 500px;
     padding-left: 10px;
     padding-right: 10px;
 `

@@ -119,6 +119,9 @@ export const ContainerProyectos = styled.div`
         padding-top: 200px;
         flex-direction: column;
     }
+    @media (max-width: 768px){
+        padding-top: 50px;
+    }
 `
 
 export const ContainerNosotros = styled.div`
@@ -134,7 +137,7 @@ export const ContainerNosotros = styled.div`
     }
     @media (max-width: 410px){
         margin-bottom: 100px;
-        padding-bottom: 50px;
+        margin-top: 100px;
     }
 `
 
