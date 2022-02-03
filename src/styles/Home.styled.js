@@ -113,14 +113,26 @@ export const ContainerProyectos = styled.div`
     justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
-    width: 90vw;
-    height: 100vh;
+    margin: auto;
+    width: 80vw;
+    height: 70vh;
+    @media (max-width: 1366px){
+        flex-direction: column;
+        padding-top: 100px;
+    }
     @media (max-width: 830px){    
-        padding-top: 200px;
+        padding-top: 50px;
         flex-direction: column;
     }
     @media (max-width: 768px){
         padding-top: 50px;
+    }
+    @media (max-width: 600px){
+        height: 70vh;
+    }
+    @media (max-width: 420px){
+        height: 50vh;
+        padding-top: 100px;
     }
 `
 
@@ -129,21 +141,54 @@ export const ContainerNosotros = styled.div`
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    flex-direction: column;
     height: 100vh;
     @media (max-width: 830px){    
-        margin-top: 150px;
-        padding-top: 50px;
+        margin-top: 50px;
+        padding-top: 0px;
         margin-bottom: 50px;
     }
-    @media (max-width: 410px){
+    @media (max-width: 430px){
         margin-bottom: 100px;
-        margin-top: 100px;
+        margin-top: 0px;
+        padding-top: 50px;
+    }
+`
+
+export const Logos = styled.div`
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+    height: 80px;
+    margin-bottom: 50px;
+    @media (max-width: 1366px){
+        height: 50px;
+    }
+    @media (max-width: 960px){
+        height: 40px;
+    }
+    @media (max-width: 768px){
+        flex-direction: column;
+        height: auto;
+    }
+`
+
+export const LogoNosotros = styled.img`
+    width: auto;
+    height: 100%;
+    @media (max-width: 768px){
+        width: 40%;
+        height: auto;
+        padding: 20px 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 `
 
 export const ContainerContacto = styled.div`
     width: 80vw;
     display: flex;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -163,12 +208,14 @@ export const Main = styled.div`
     border-right: 1px solid #322758;
 `
 
-export const Mitad = styled.div`
-    width: 50%;
+export const Imagen = styled.div`
+    width: 100%;
     display: flex;
     img {
-        width: 80%;
+        width: 100%;
         height: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     @media (max-width: 830px){
         flex-direction: column;
@@ -180,6 +227,18 @@ export const Mitad = styled.div`
     }
 `
 
+export const Mitad = styled.div`
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    margin-top: 50px;
+    @media (max-width: 830px){
+        flex-direction: column;
+        height: auto;
+    }
+`
+
 export const Contacto = styled.div`
     display: flex;
     flex-direction: column;
@@ -187,6 +246,7 @@ export const Contacto = styled.div`
     margin-bottom: 50px;
     &:nth-child(1){
         margin-bottom: 70px;
+        margin-left: auto;
     }
     &:nth-child(2){
         margin-left: auto;
