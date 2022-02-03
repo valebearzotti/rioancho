@@ -67,9 +67,9 @@ const Container = styled.div`
         color: #322758;
     }
     .img {
-        width: fit-content;
+        width: auto;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
         display: block;
         margin-left: auto;
         margin-right: auto;
