@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { createGlobalStyle, keyframes } from "styled-components"
+import { createGlobalStyle } from "styled-components"
 import './styles.css'
 
 export const Container = styled.div`
@@ -131,7 +131,7 @@ export const ContainerProyectos = styled.div`
         height: 70vh;
     }
     @media (max-width: 420px){
-        height: 50vh;
+        height: auto;
         padding-top: 50px;
     }
 `

@@ -5,7 +5,7 @@ function Proyecto({nombre, fondo, link}) {
     return (
         <Container>
             <a href={link}>
-                <img src={fondo}/>
+                <img src={fondo} alt=""/>
                 <p>{nombre}</p>
             </a>
         </Container>
@@ -62,9 +62,15 @@ const Container = styled.div`
     @media (max-width: 830px){
         margin-left: auto;
         margin-right: auto;
+        p{
+            font-size: 20px;
+        }
     }
     @media (max-width: 768px){
         width: 100%;
+        p{
+            font-size: 16px;
+        }
     }
     @media (min-width: 1440px){
         //width: 350px;
