@@ -114,7 +114,7 @@ export const ContainerProyectos = styled.div`
     margin-left: auto;
     margin-right: auto;
     margin: auto;
-    width: 80vw;
+    width: 100%;
     height: 70vh;
     @media (max-width: 1366px){
         flex-direction: column;
@@ -132,7 +132,7 @@ export const ContainerProyectos = styled.div`
     }
     @media (max-width: 420px){
         height: 50vh;
-        padding-top: 100px;
+        padding-top: 50px;
     }
 `
 
@@ -142,7 +142,8 @@ export const ContainerNosotros = styled.div`
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
+    padding-top: 100px;
     @media (max-width: 830px){    
         margin-top: 50px;
         padding-top: 0px;
@@ -160,7 +161,7 @@ export const Logos = styled.div`
     justify-content: space-around;
     width: 80vw;
     height: 80px;
-    margin-bottom: 50px;
+    padding: 50px 0;
     @media (max-width: 1366px){
         height: 50px;
     }
@@ -170,6 +171,7 @@ export const Logos = styled.div`
     @media (max-width: 768px){
         flex-direction: column;
         height: auto;
+        padding: 0;
     }
 `
 
@@ -186,7 +188,7 @@ export const LogoNosotros = styled.img`
 `
 
 export const ContainerContacto = styled.div`
-    width: 80vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -195,17 +197,18 @@ export const ContainerContacto = styled.div`
     margin-bottom: 50px;
     @media (max-width: 830px){
         flex-direction: column;
+        margin-top: 0;
     }
 `
 
 export const Main = styled.div`
     display: flex;
     flex-direction: column;
-    width: 95vw;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    border-left: 1px solid #322758;
-    border-right: 1px solid #322758;
+    /* border-left: 1px solid #322758;
+    border-right: 1px solid #322758; */
 `
 
 export const Imagen = styled.div`
@@ -228,7 +231,7 @@ export const Imagen = styled.div`
 `
 
 export const Mitad = styled.div`
-    width: 80vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     height: 150px;

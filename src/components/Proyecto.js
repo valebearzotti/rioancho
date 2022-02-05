@@ -13,7 +13,7 @@ function Proyecto({nombre, fondo, link}) {
 }
 
 const Container = styled.div`
-    width: 48%;
+    width: 100%;
     height: auto;
     background-color: transparent;
     transition: .3s all ease-in;

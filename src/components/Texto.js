@@ -37,10 +37,10 @@ const Parrafo = styled.p`
     font-weight: 500;
     padding-bottom: 20px;
     @media (max-width: 830px){
-        font-size: 20px;
+        font-size: 16px;
     }
     @media (max-width: 350px){
-        font-size: 18px;
+        font-size: 14px;
     }
     @media (min-width: 1440px){
         font-size: 26px;
@@ -53,12 +53,12 @@ const Titulo = styled.h1`
     color: #322758;
     font-size: 42px;
     @media (max-width: 830px){
-        font-size: 34px;
+        font-size: 24px;
         padding-top: 50px;
     }
     @media (max-width: 450px){
-        font-size: 26px;
-        padding-top: 20px
+        font-size: 20px;
+        padding-top: 20px;
     }
 `
 
