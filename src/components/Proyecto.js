@@ -41,10 +41,11 @@ const Container = styled.div`
     }
     &:hover{
         transition: .3s all ease-in;
-        background-color: #322758;
+        background-color: #002171;
+        opacity: 1;
         img{
             transition: opacity .3s ease-in-out;
-            opacity: 0;
+            opacity: 0.6;
         }
         p{
             opacity: 1;

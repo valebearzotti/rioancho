@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
 export const Navbar = styled.div`
     display: flex;
     font-size: 22px;
-    color: #322758;
+    color: #515151;
     position: ${props => props.val ? "fixed" : "absolute"};
     width: 100%;
     top: ${props => props.val ? "0" : ""};
@@ -32,7 +32,7 @@ export const Navbar = styled.div`
     transition: opacity .3s ease-in;
     a {
         text-decoration: none;
-        color: #322758;
+        color: #515151;
     }
     @media (max-width: 830px){
         position: fixed;
@@ -207,8 +207,8 @@ export const Main = styled.div`
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    /* border-left: 1px solid #322758;
-    border-right: 1px solid #322758; */
+    /* border-left: 1px solid #515151;
+    border-right: 1px solid #515151; */
 `
 
 export const Imagen = styled.div`
@@ -255,7 +255,7 @@ export const Contacto = styled.div`
         margin-left: auto;
         margin-right: auto;
     }
-    color: #322758;
+    color: #515151;
     @media (max-width: 830px){
         margin-left: auto;
         margin-right: auto;
@@ -306,5 +306,5 @@ export const Redes = styled.a`
         margin: 0;
     }
     text-decoration: none;
-    color: #322758;
+    color: #515151;
 `

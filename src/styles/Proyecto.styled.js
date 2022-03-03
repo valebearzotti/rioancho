@@ -20,7 +20,7 @@ export const ContenedorDatos = styled.div`
     margin-right: auto;
     height: 100vh;
     flex-direction: column;
-    color: #322758;
+    color: #515151;
 `
 
 export const ContenedorSinDatos = styled.div`
@@ -30,7 +30,7 @@ export const ContenedorSinDatos = styled.div`
     margin-right: auto;
     height: auto;
     flex-direction: column;
-    color: #322758;
+    color: #515151;
 `
 
 
@@ -41,6 +41,7 @@ export const Titulo = styled.div`
     h1 {
         font-weight: 800;
         font-size: 22px;
+        color: #002171;
     }
     p {
         margin-left: 50px;
@@ -49,6 +50,7 @@ export const Titulo = styled.div`
         font-weight: 600;
         margin-top: auto;
         margin-bottom: auto;
+        color: #002171;
     }
     @media (max-width: 550px){
         flex-direction: column;
