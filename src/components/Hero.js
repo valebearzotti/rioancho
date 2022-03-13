@@ -1,6 +1,5 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
-import heroimg from '../assets/work-inpro.jpg'
 import herovid from '../assets/atocha-video.mp4'
 import arrow from '../assets/arrow.svg'
 
@@ -16,7 +15,7 @@ function Hero() {
             <video autoPlay muted loop id='vid'>
                 <source src={herovid} type="video/mp4" />
             </video>
-            <a href="#proyectos"><img src={arrow} /></a>
+            <a href="#proyectos"><img src={arrow} alt=""/></a>
         </Container>
     )
 }

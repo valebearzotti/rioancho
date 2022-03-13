@@ -3,16 +3,14 @@ import styled from 'styled-components'
 
 function Proyecto({nombre, fondo, link}) {
     return (
-        <Container>
-            <a href={link}>
-                <img src={fondo} alt=""/>
-                <p>{nombre}</p>
-            </a>
+        <Container href={link}>
+            <img src={fondo} alt=""/>
+            <p>{nombre}</p>
         </Container>
     )
 }
 
-const Container = styled.div`
+const Container = styled.a`
     width: 100%;
     height: auto;
     background-color: transparent;
@@ -23,7 +21,7 @@ const Container = styled.div`
     margin-top: auto;
     img{
         width: 100%;
-        height: 100%;
+        height: auto;
         opacity: 1;
         object-fit: contain;
         transition: opacity .3s ease-in-out;

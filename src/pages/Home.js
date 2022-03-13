@@ -8,12 +8,8 @@ import logo from '../assets/logo.png'
 import izq from '../assets/proyectos.svg'
 import der from '../assets/nosotros.svg'
 import atocha from '../assets/atocha2.webp'
-import abasto from '../assets/abasto2.webp'
+import abasto from '../assets/abastof.webp'
 import contacto from '../assets/contacto.jpg'
-import ig from '../assets/ig.svg'
-import izquierda from '../assets/rizzotto.png'
-import centro from '../assets/chorostecki.png'
-import derecha from '../assets/aev.png'
 
 
 

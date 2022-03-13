@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         background-color: #fff;
-        font-family: 'Nunito', sans-serif;
+        font-family: 'Nunito Sans', sans-serif;
     }
     html {
         scroll-behavior: smooth;
