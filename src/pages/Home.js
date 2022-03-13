@@ -2,17 +2,15 @@ import React, { useState, useEffect } from 'react'
 import Hero from '../components/Hero'
 import Proyecto from '../components/Proyecto'
 import Texto from '../components/Texto'
+import Footer from '../components/Footer'
 import { Container, GlobalStyle, Navbar, Logo, Proyectos, Nosotros, Imagen, Main, ContainerProyectos, ContainerNosotros, Logos, LogoNosotros, ContainerContacto, Mitad, Contacto, Titulo, Contenido, Redes } from '../styles/Home.styled'
 import logo from '../assets/logo.png'
 import izq from '../assets/proyectos.svg'
 import der from '../assets/nosotros.svg'
 import atocha from '../assets/atocha2.webp'
-import abasto from '../assets/abasto2.webp'
+import abasto from '../assets/abastof.webp'
 import contacto from '../assets/contacto.jpg'
-import ig from '../assets/ig.svg'
-import izquierda from '../assets/rizzotto.png'
-import centro from '../assets/chorostecki.png'
-import derecha from '../assets/aev.png'
+
 
 
 function Home() {
@@ -70,48 +68,14 @@ function Home() {
                 </ContainerProyectos>
                 <ContainerNosotros id="nosotros">
                     <Texto />
-                    <Logos>
-                        <LogoNosotros 
-                            src={izquierda}
-                        />
-                        <LogoNosotros 
-                            src={centro}
-                        />
-                        <LogoNosotros 
-                            src={derecha}
-                        />
-                    </Logos>
                 </ContainerNosotros>
                 <ContainerContacto>
                     <Imagen>
                         <img src={contacto}/>
                     </Imagen>
-                    <Mitad>
-                        <Contacto>
-                            <Titulo>
-                                Dirección
-                            </Titulo>
-                            <Contenido>
-                            Sarmiento 819 Piso 3 Of 5 - Rosario, Argentina.
-                            </Contenido>
-                        </Contacto>
-                        <Contacto>
-                            <Titulo>
-                                Contacto
-                            </Titulo>
-                            <Contenido>
-                            +54 9 341 6635989<br></br>
-                            +54 341 4470537
-                            <Redes href="mailto:contacto@rioancho.com.ar">contacto@rioancho.com.ar</Redes>
-                            <Redes href="https://www.instagram.com/rio.ancho/" target="_blank">
-                                <img src={ig}/><p>/rio.ancho</p>
-                            </Redes>
-                            </Contenido>
-                        </Contacto>
-                    </Mitad>
                 </ContainerContacto>
             </Main>
-            
+            <Footer />
         </Container>
     )
 }

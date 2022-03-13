@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, GlobalStyle, Navbar, Logo, Proyectos, Nosotros } from '../styles/Home.styled'
-import { ContenedorCarousel, ContenedorDatos, Titulo, Estado, Datos, Ubicacion, Main } from '../styles/Proyecto.styled'
+import { ContenedorCarousel, ContenedorDatos, Titulo, Estado, Datos, Ubicacion, Main, Amenidades, Amenidad, FilaAmenidades, TituloAmenidad } from '../styles/Proyecto.styled'
 import logo from '../assets/logo.png'
 import izq from '../assets/proyectos.svg'
 import der from '../assets/nosotros.svg'
@@ -9,7 +9,9 @@ import slideDos from '../assets/atocha2.webp'
 import slideTres from '../assets/atocha3.jpg'
 import slideCuatro from '../assets/atocha4.jpg'
 import Carousel from '../components/Carousel'
-import Swipe from '../components/Swipe'
+import Footer from '../components/Footer'
+import amenidadUno from '../assets/resources/parrilla.svg'
+import amenidadDos from '../assets/resources/cocheras.svg'
 
 function Atocha() {
     const slides = [slideUno, slideDos, slideTres, slideCuatro]
@@ -35,18 +37,13 @@ function Atocha() {
             </Navbar>
             <Main>
                 <ContenedorCarousel>
-                    <Swipe slides={slides}/>
+                    <Carousel slides={slides}/>
                 </ContenedorCarousel>
                 <ContenedorDatos>
                     <Titulo>
                         <h1>Atocha</h1>
-                        <p>
-                            Tucumán 3319, Centro, Rosario
-                        </p>
+                        <p>Tucumán 3319, Rosario</p>
                     </Titulo>
-                    <Estado>
-                        Finalizado
-                    </Estado>
                     <Datos>
                         <p>Emplazado sobre calle Tucumán casi esquina Crespo, el Edificio Atocha se ubica en una zona residencial en
                         completo crecimiento de la ciudad de Rosario. El barrio se potencia con el desarrollo del nuevo Mercado del
@@ -56,13 +53,27 @@ function Atocha() {
                         de numerosos locales en Pichincha.</p>
                     </Datos>
                     <Estado>
+                        Amenidades
+                    </Estado>
+                    <Amenidades>
+                        <FilaAmenidades>
+                            <Amenidad src={amenidadUno}/>
+                            <TituloAmenidad>Terraza con parrilla</TituloAmenidad>
+                            <Amenidad src={amenidadDos}/>
+                            <TituloAmenidad>Cocheras</TituloAmenidad>
+                        </FilaAmenidades>
+                    </Amenidades>
+                    <Estado>
                         Ubicación
                     </Estado>
                     <Ubicacion>
-                    <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Tucuman%203319,%20Rosario,%20Argentina+(Atocha)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Tucuman%203319,%20Rosario,%20Argentina+(Atocha)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                     </Ubicacion>
+                    <Footer />
                 </ContenedorDatos>
+                
             </Main>
+            
         </Container>
     )
 }

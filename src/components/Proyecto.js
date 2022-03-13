@@ -3,17 +3,15 @@ import styled from 'styled-components'
 
 function Proyecto({nombre, fondo, link}) {
     return (
-        <Container>
-            <a href={link}>
-                <img src={fondo}/>
-                <p>{nombre}</p>
-            </a>
+        <Container href={link}>
+            <img src={fondo} alt=""/>
+            <p>{nombre}</p>
         </Container>
     )
 }
 
-const Container = styled.div`
-    width: 48%;
+const Container = styled.a`
+    width: 100%;
     height: auto;
     background-color: transparent;
     transition: .3s all ease-in;
@@ -23,7 +21,7 @@ const Container = styled.div`
     margin-top: auto;
     img{
         width: 100%;
-        height: 100%;
+        height: auto;
         opacity: 1;
         object-fit: contain;
         transition: opacity .3s ease-in-out;
@@ -41,10 +39,11 @@ const Container = styled.div`
     }
     &:hover{
         transition: .3s all ease-in;
-        background-color: #322758;
+        background-color: #002171;
+        opacity: 1;
         img{
             transition: opacity .3s ease-in-out;
-            opacity: 0;
+            opacity: 0.6;
         }
         p{
             opacity: 1;
@@ -62,9 +61,15 @@ const Container = styled.div`
     @media (max-width: 830px){
         margin-left: auto;
         margin-right: auto;
+        p{
+            font-size: 20px;
+        }
     }
     @media (max-width: 768px){
         width: 100%;
+        p{
+            font-size: 16px;
+        }
     }
     @media (min-width: 1440px){
         //width: 350px;

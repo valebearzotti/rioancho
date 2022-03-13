@@ -8,7 +8,7 @@ function Carousel({slides}) {
     return (
         <Container>
              <Flickity options={{
-              autoPlay: 4000,
+              autoPlay: 2000,
               pauseAutoPlayOnHover: true,
               wrapAround: true,
               adaptiveHeight: false,
@@ -16,7 +16,7 @@ function Carousel({slides}) {
               contain: true,
               dragThreshold: 10,
               // disable previous & next buttons and dots
-              prevNextButtons: true,
+              prevNextButtons: false,
               pageDots: false,
               imagesLoaded: true,
               initialIndex: 1,

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { createGlobalStyle, keyframes } from "styled-components"
+import { createGlobalStyle } from "styled-components"
 import './styles.css'
 
 export const Container = styled.div`
@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         background-color: #fff;
-        font-family: 'Nunito', sans-serif;
+        font-family: 'Nunito Sans', sans-serif;
     }
     html {
         scroll-behavior: smooth;
@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
 export const Navbar = styled.div`
     display: flex;
     font-size: 22px;
-    color: #322758;
+    color: #515151;
     position: ${props => props.val ? "fixed" : "absolute"};
     width: 100%;
     top: ${props => props.val ? "0" : ""};
@@ -32,7 +32,7 @@ export const Navbar = styled.div`
     transition: opacity .3s ease-in;
     a {
         text-decoration: none;
-        color: #322758;
+        color: #515151;
     }
     @media (max-width: 830px){
         position: fixed;
@@ -114,7 +114,7 @@ export const ContainerProyectos = styled.div`
     margin-left: auto;
     margin-right: auto;
     margin: auto;
-    width: 80vw;
+    width: 100%;
     height: 70vh;
     @media (max-width: 1366px){
         flex-direction: column;
@@ -131,8 +131,8 @@ export const ContainerProyectos = styled.div`
         height: 70vh;
     }
     @media (max-width: 420px){
-        height: 50vh;
-        padding-top: 100px;
+        height: auto;
+        padding-top: 50px;
     }
 `
 
@@ -142,7 +142,8 @@ export const ContainerNosotros = styled.div`
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
+    padding-top: 100px;
     @media (max-width: 830px){    
         margin-top: 50px;
         padding-top: 0px;
@@ -160,7 +161,7 @@ export const Logos = styled.div`
     justify-content: space-around;
     width: 80vw;
     height: 80px;
-    margin-bottom: 50px;
+    padding: 50px 0;
     @media (max-width: 1366px){
         height: 50px;
     }
@@ -170,6 +171,7 @@ export const Logos = styled.div`
     @media (max-width: 768px){
         flex-direction: column;
         height: auto;
+        padding: 0;
     }
 `
 
@@ -186,7 +188,7 @@ export const LogoNosotros = styled.img`
 `
 
 export const ContainerContacto = styled.div`
-    width: 80vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -195,17 +197,18 @@ export const ContainerContacto = styled.div`
     margin-bottom: 50px;
     @media (max-width: 830px){
         flex-direction: column;
+        margin-top: 0;
     }
 `
 
 export const Main = styled.div`
     display: flex;
     flex-direction: column;
-    width: 95vw;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    border-left: 1px solid #322758;
-    border-right: 1px solid #322758;
+    /* border-left: 1px solid #515151;
+    border-right: 1px solid #515151; */
 `
 
 export const Imagen = styled.div`
@@ -228,7 +231,7 @@ export const Imagen = styled.div`
 `
 
 export const Mitad = styled.div`
-    width: 80vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     height: 150px;
@@ -252,7 +255,7 @@ export const Contacto = styled.div`
         margin-left: auto;
         margin-right: auto;
     }
-    color: #322758;
+    color: #515151;
     @media (max-width: 830px){
         margin-left: auto;
         margin-right: auto;
@@ -303,5 +306,5 @@ export const Redes = styled.a`
         margin: 0;
     }
     text-decoration: none;
-    color: #322758;
+    color: #515151;
 `
