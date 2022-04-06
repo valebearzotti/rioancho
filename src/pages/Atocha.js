@@ -4,17 +4,16 @@ import { ContenedorCarousel, ContenedorDatos, Titulo, Estado, Datos, Ubicacion, 
 import logo from '../assets/logo.png'
 import izq from '../assets/proyectos.svg'
 import der from '../assets/nosotros.svg'
-import slideUno from '../assets/atocha1.webp'
-import slideDos from '../assets/atocha2.webp'
-import slideTres from '../assets/atocha3.jpg'
-import slideCuatro from '../assets/atocha4.jpg'
+import slideUno from '../assets/galeria-atocha-01.jpg'
+import slideDos from '../assets/galeria-atocha-02.jpg'
+import slideTres from '../assets/galeria-atocha-03.jpg'
 import Carousel from '../components/Carousel'
 import Footer from '../components/Footer'
 import amenidadUno from '../assets/resources/parrilla.svg'
 import amenidadDos from '../assets/resources/cocheras.svg'
 
 function Atocha() {
-    const slides = [slideUno, slideDos, slideTres, slideCuatro]
+    const slides = [slideUno, slideDos, slideTres]
     return (
         <Container>
             <GlobalStyle />
