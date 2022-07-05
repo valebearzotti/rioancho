@@ -1,20 +1,22 @@
 import React, {useEffect} from 'react'
 import styled from 'styled-components'
 import herovid from '../assets/atocha-video.mp4'
+import image from '../assets/04.jpg'
 import arrow from '../assets/arrow.svg'
 
 function Hero() {
 
-    useEffect(() => {
+    /*useEffect(() => {
         document.getElementById('vid').play();
-    }, [])
+    }, [])*/
 
     return (
         <Container>
-            {/* <img src={heroimg} /> */}
+            {/* <img src={heroimg} /> 
             <video autoPlay muted loop id='vid'>
                 <source src={herovid} type="video/mp4" />
-            </video>
+            </video>*/}
+            <img src={image} />
             <a href="#proyectos"><img src={arrow} alt=""/></a>
         </Container>
     )
@@ -22,12 +24,12 @@ function Hero() {
 
 const Container = styled.div`
     position: relative;
-    video {
+    img {
         width: 100%;
         height: 100vh;
         object-fit: cover;
     }
-    img{
+    a img{
         position: absolute;
         left: 48%;
         width: 50px;
@@ -36,15 +38,15 @@ const Container = styled.div`
         cursor: pointer;
     }
     @media (max-width: 1300px){
-        img{
+        a img{
             object-position: 15% 100%;
         }
     }
     @media (max-width: 768px){
-        video{
+        img{
             height: auto;
         }
-        img{
+        a img{
             top: 80%;
             left: 47%;
             width: 30px;
