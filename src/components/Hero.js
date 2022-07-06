@@ -1,14 +1,9 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import herovid from '../assets/atocha-video.mp4'
-import image from '../assets/04.jpg'
+import image from '../assets/042.jpg'
 import arrow from '../assets/arrow.svg'
 
 function Hero() {
-
-    /*useEffect(() => {
-        document.getElementById('vid').play();
-    }, [])*/
 
     return (
         <Container>
